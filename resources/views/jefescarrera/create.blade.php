@@ -17,24 +17,8 @@
             <form action="/jefes" method="POST">
                 @csrf
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="carrera" class="form-label">Carrera</label>
-                    <select name="carrera" class="form-select">
-                        <option selected>Seleccione la carrera</option>
-                        <option value="ING. SISTEMAS COMPUTACIONALES">ING. SISTEMAS COMPUTACIONALES</option>
-                        <option value="ING. INDUSTRIAL">ING. INDUSTRIAL</option>
-                        <option value="ING. BIOQUIMICIA">ING. BIOQUIMICIA</option>
-                        <option value="ING. ELECTROMECANICA">ING. ELECTROMECANICA</option>
-                        <option value="ING. ELECTRONICA">ING. ELECTRONICA</option>
-                        <option value="ING. INDUSTRIAS ALIMENTARIAS">ING. INDUSTRIAS ALIMENTARIAS</option>
-                        <option value="LIC. GASTRONOMIA">LIC. GASTRONOMIA</option>
-                        <option value="ING. CIVIL">ING. CIVIL</option>
-                        <option value="ING. MECATRONICA">ING. MECATRONICA</option>
-                        <option value="ING. GESTION EMPRESARIAL">ING. GESTION EMPRESARIAL</option>
-                    </select>
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="name">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
