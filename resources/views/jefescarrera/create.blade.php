@@ -4,6 +4,16 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-sm-7">
+            <h2>Crear Jefe de Carrera</h2>
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <form action="/jefes" method="POST">
                 @csrf
                 <div class="mb-3">
@@ -35,6 +45,7 @@
                     <input type="password" class="form-control" name="password">
                 </div>
                 <button type="submit" class="btn btn-primary">Crear</button>
+                <button type="reset" class="btn btn-danger">Cancelar</button>
             </form>
         </div>
     </div>

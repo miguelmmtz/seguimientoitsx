@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\JefeEditFormRequest;
+use App\Http\Requests\JefeFormRequest;
 use App\Models\JefeCarrera;
 use Illuminate\Http\Request;
 
@@ -34,7 +36,7 @@ class JefeCarreraController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(JefeFormRequest $request)
     {
         $jefeCarrera = new JefeCarrera();
 
@@ -67,7 +69,7 @@ class JefeCarreraController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('jefescarrera.edit', ['jefe'=>JefeCarrera::findOrFail($id)]);
     }
 
     /**
@@ -77,9 +79,16 @@ class JefeCarreraController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(JefeEditFormRequest $request, $id)
     {
-        //
+        $jefeCarrera = JefeCarrera::findOrFail($id);
+
+        $jefeCarrera->nombre = $request->get('nombre');
+        $jefeCarrera->carrera = $request->get('carrera');
+        $jefeCarrera->email = $request->get('email');
+
+        $jefeCarrera->update();
+        return redirect('/jefes');
     }
 
     /**
@@ -90,6 +99,10 @@ class JefeCarreraController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $jefeCarrera = JefeCarrera::findOrFail($id);
+
+        $jefeCarrera->delete();
+
+        return redirect('jefes');
     }
 }

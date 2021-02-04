@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\JefeCarreraController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,4 +17,5 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource('/jefes', JefeCarreraController::class);
+Route::resource('jefes', 'JefeCarreraController');
+
