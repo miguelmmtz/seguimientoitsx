@@ -50,7 +50,19 @@
     </div>
     <div class="input-group mb-3">
         <span class="input-group-text" id="carrera">Carrera</span>
-        <input type="text" name="I-14" class="form-control" aria-describedby="carrera">
+        <select name="I-14" class="form-select">
+            <option selected>Seleccione la carrera</option>
+            <option value="ING. SISTEMAS COMPUTACIONALES">ING. SISTEMAS COMPUTACIONALES</option>
+            <option value="ING. INDUSTRIAL">ING. INDUSTRIAL</option>
+            <option value="ING. BIOQUIMICA">ING. BIOQUIMICA</option>
+            <option value="ING. ELECTROMECANICA">ING. ELECTROMECANICA</option>
+            <option value="ING. ELECTRONICA">ING. ELECTRONICA</option>
+            <option value="ING. INDUSTRIAS ALIMENTARIAS">ING. INDUSTRIAS ALIMENTARIAS</option>
+            <option value="LIC. GASTRONOMIA">LIC. GASTRONOMIA</option>
+            <option value="ING. CIVIL">ING. CIVIL</option>
+            <option value="ING. MECATRONICA">ING. MECATRONICA</option>
+            <option value="ING. GESTION EMPRESARIAL">ING. GESTION EMPRESARIAL</option>
+        </select>
         <span class="input-group-text" id="especialidad">Especialidad</span>
         <input type="text" name="I-15" class="form-control" aria-describedby="especialidad">
         <span class="input-group-text" id="mesegreso">Mes del egreso</span>

@@ -46,23 +46,23 @@
 <div class="input-group mb-3">
     <div class="form-check form-check-inline">
         <label class="form-check-label" for="excelente2">Excelente</label>
-        <input class="form-check-input" type="radio" name="IV-3" value="Excelente2" id="excelente2">
+        <input class="form-check-input" type="radio" name="IV-3" value="Excelente" id="excelente2">
     </div>
     <div class="form-check form-check-inline">
         <label class="form-check-label" for="bueno2">Bueno</label>
-        <input class="form-check-input" type="radio" name="IV-3" value="Bueno2" id="bueno2">
+        <input class="form-check-input" type="radio" name="IV-3" value="Bueno" id="bueno2">
     </div>
     <div class="form-check form-check-inline">
         <label class="form-check-label" for="regular2">Regular</label>
-        <input class="form-check-input" type="radio" name="IV-3" value="Regular2" id="regular2">
+        <input class="form-check-input" type="radio" name="IV-3" value="Regular" id="regular2-4">
     </div>
     <div class="form-check form-check-inline">
         <label class="form-check-label" for="malo2">Malo</label>
-        <input class="form-check-input" type="radio" name="IV-3" value="Malo2" id="malo2">
+        <input class="form-check-input" type="radio" name="IV-3" value="Malo" id="malo2">
     </div>
     <div class="form-check form-check-inline">
         <label class="form-check-label" for="pesimo2">Pesimo</label>
-        <input class="form-check-input" type="radio" name="IV-3" value="Pesimo2" id="pesimo2">
+        <input class="form-check-input" type="radio" name="IV-3" value="Pesimo" id="pesimo2">
     </div>
 </div>
 <span class="input-group-text" id="titulo4-4">IV.4 Aspectos que valora la empresa u organismo para la contratación de egresados</span>

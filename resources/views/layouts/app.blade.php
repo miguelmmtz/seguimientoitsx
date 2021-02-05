@@ -44,9 +44,21 @@
                         @guest
 
                         @else
+                            <!-- Egresados -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('egresados')}}">Egresados</a>
+                            </li>
                             <!-- Directorio Egresados -->
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('diregresados')}}">Directorio Egresados</a>
+                            </li>
+                            <!-- Empresas -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('empresas')}}">Empresas</a>
+                            </li>
+                            <!-- Directorio Empresas -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('dirempresas')}}">Directorio Empresas</a>
                             </li>
                             @can('administrador')
                             <!-- Jefes de carrera -->
