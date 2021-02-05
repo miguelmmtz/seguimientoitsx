@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h2>Directorio de correos Egresados</h2>
+        <h2>Egresados</h2>
         <table class="table">
             <thead>
             <tr>
