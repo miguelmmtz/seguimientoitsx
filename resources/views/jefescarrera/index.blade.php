@@ -8,6 +8,7 @@
             <tr>
                 <th scope="col">Nombre</th>
                 <th scope="col">Email</th>
+                <th scope="col">Carrera</th>
                 <th scope="col"></th>
             </tr>
         </thead>
@@ -16,8 +17,9 @@
             <tr>
                 <td>{{$jefe->name}}</td>
                 <td>{{$jefe->email}}</td>
+                <td>{{str_replace(['[{"label":"','"}]'],"",\App\Models\Role::select('label')->where('id',$jefe->id)->get())}}</td>
                 <td>
-                    <a href="{{route('jefes.edit',$jefe->id)}}"><button type="button" class="btn btn-secondary">Editar</button></a>
+                    <a href="{{route('jefes.edit',$jefe->id)}}"><button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button></a>
                 </td>
             </tr>
         @endforeach

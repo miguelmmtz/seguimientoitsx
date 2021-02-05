@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\JefeEditFormRequest;
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
 

@@ -22,3 +22,5 @@ Route::resource('jefes', 'UserController');
 
 Route::resource('diregresados', 'DirEgresadoController');
 
+Route::get('/egresado-encuesta', 'EgresadoEncuestaController@index');
+

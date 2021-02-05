@@ -26,8 +26,10 @@
                         <form action="{{route('diregresados.destroy',$degresado->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <a href="{{route('diregresados.edit',$degresado->id)}}"><button type="button" class="btn btn-secondary">Editar</button></a>
-                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                            <a href="/egresado-encuesta"><button type="button" class="btn btn-dark">Encuesta</button></a>
+                            <button type="button" class="btn btn-primary"><i class="far fa-envelope"></i></button>
+                            <a href="{{route('diregresados.edit',$degresado->id)}}"><button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button></a>
+                            <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
                         </form>
                     </td>
                 </tr>
