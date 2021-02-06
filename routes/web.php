@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return "Aquí estará disponible el sitio de encuestas para el ITSX :)";
-});
+Auth::routes();
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('jefes', 'UserController');
+
+Route::resource('diregresados', 'DirEgresadoController');
+
+Route::resource('egresado-encuesta', 'EgresadoEncuestaController');
+
+Route::resource('dirempresas', 'DirEmpresaController');
+
+Route::resource('egresados', 'EgresadoController');
