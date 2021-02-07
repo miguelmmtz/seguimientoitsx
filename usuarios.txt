@@ -1,0 +1,27 @@
+Usuarios del sistema
+
+director@itsx
+admin-itsx
+
+
+jefe-sistemas@itsx
+jefe-industrial@itsx
+jefe-bioquimica@itsx
+efe-electromecanica@itsx
+jefe-electronica@itsx
+jefe-alimentarias@itsx
+jefe-gastronomia@itsx
+jefe-civil@itsx
+jefe-mecatronica@itsx
+jefe-gestion@itsx
+
+sistemas
+industrial
+bioquimica
+electromecanica
+electronica
+alimentarias
+gastronomia
+civil
+mecatronica
+gestion
